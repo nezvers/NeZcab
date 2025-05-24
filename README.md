@@ -1,7 +1,7 @@
 # NeZcab
 
 Convolution example/showcase project of different libraries for resampling and convolution.
-Clone project recursively next to Iplug2 library `(currently configuration set for Windows only)`.
+Clone project recursively next to [iPlug2 library](github.com/olilarkin/iplug2).
 ```
 git clone --recursive https://github.com/nezvers/NeZcab.git
 ```
