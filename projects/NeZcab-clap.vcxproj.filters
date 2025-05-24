@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\NeZcab.cpp" />
+    <ClCompile Include="..\..\iPlug2\IPlug\IPlugAPIBase.cpp">
+      <Filter>IPlug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\IPlugParameter.cpp">
+      <Filter>IPlug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\IPlugProcessor.cpp">
+      <Filter>IPlug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\IGraphics.cpp">
+      <Filter>IGraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\Platforms\IGraphicsWin.cpp">
+      <Filter>IGraphics\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\IPlugPluginBase.cpp">
+      <Filter>IPlug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\IPlugTimer.cpp">
+      <Filter>IPlug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\Drawing\IGraphicsNanoVG.cpp">
+      <Filter>IGraphics\Drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\IControl.cpp">
+      <Filter>IGraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\IGraphicsEditorDelegate.cpp">
+      <Filter>IGraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\Controls\IControls.cpp">
+      <Filter>IGraphics\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\Controls\IPopupMenuControl.cpp">
+      <Filter>IGraphics\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\Controls\ITextEntryControl.cpp">
+      <Filter>IGraphics\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\IPlugPaths.cpp">
+      <Filter>IPlug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\Drawing\IGraphicsSkia.cpp">
+      <Filter>IGraphics\Drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\CLAP\IPlugCLAP.cpp">
+      <Filter>IPlug\CLAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\Extras\Synth\MidiSynth.cpp">
+      <Filter>IPlug\Extras\Synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\Extras\Synth\VoiceAllocator.cpp">
+      <Filter>IPlug\Extras\Synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\WDL\convoengine.cpp">
+      <Filter>WDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\WDL\fft.c">
+      <Filter>WDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\WDL\resample.cpp">
+      <Filter>WDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\HISSTools_FFT\HISSTools_FFT.cpp">
+      <Filter>HISSTools_Library\FFT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\HIRT_Multichannel_Convolution\Convolver.cpp">
+      <Filter>HISSTools_Library\Convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\HIRT_Multichannel_Convolution\MonoConvolve.cpp">
+      <Filter>HISSTools_Library\Convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\HIRT_Multichannel_Convolution\NToMonoConvolve.cpp">
+      <Filter>HISSTools_Library\Convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\HIRT_Multichannel_Convolution\PartitionedConvolve.cpp">
+      <Filter>HISSTools_Library\Convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\HIRT_Multichannel_Convolution\TimeDomainConvolve.cpp">
+      <Filter>HISSTools_Library\Convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\AudioFile\BaseAudioFile.cpp">
+      <Filter>HISSTools_Library\AudioFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\AudioFile\IAudioFile.cpp">
+      <Filter>HISSTools_Library\AudioFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\AudioFile\OAudioFile.cpp">
+      <Filter>HISSTools_Library\AudioFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Frame_Stats.c">
+      <Filter>HISSTools_PluginLib\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Matrix_Math.c">
+      <Filter>HISSTools_PluginLib\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Trim_Normalise.c">
+      <Filter>HISSTools_PluginLib\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\r8brain-free-src\pffft.cpp">
+      <Filter>r8brain-free</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\r8brain-free-src\r8bbase.cpp">
+      <Filter>r8brain-free</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\r8brain-free-src\pffft_double\pffft_double.c">
+      <Filter>r8brain-free\pffft_double</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\FFTConvolver\AudioFFT.cpp">
+      <Filter>FFTConvolver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\FFTConvolver\FFTConvolver.cpp">
+      <Filter>FFTConvolver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\FFTConvolver\TwoStageFFTConvolver.cpp">
+      <Filter>FFTConvolver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\FFTConvolver\Utilities.cpp">
+      <Filter>FFTConvolver</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="../config.h" />
+    <ClInclude Include="..\NeZcab.h" />
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugAPIBase.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugConstants.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugLogger.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugMidi.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugPlatform.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugParameter.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugStructs.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugUtilities.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlug_include_in_plug_hdr.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlug_include_in_plug_src.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\resources\resource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugProcessor.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugEditorDelegate.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphics.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphics_include_in_plug_hdr.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphics_include_in_plug_src.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphics_select.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsConstants.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsLiveEdit.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsPopupMenu.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsStructs.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsPrivate.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsUtilities.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Drawing\IGraphicsNanoVG.h">
+      <Filter>IGraphics\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Platforms\IGraphicsWin.h">
+      <Filter>IGraphics\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Platforms\IGraphicsWeb.h">
+      <Filter>IGraphics\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Platforms\IGraphicsMac.h">
+      <Filter>IGraphics\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Platforms\IGraphicsMac_view.h">
+      <Filter>IGraphics\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Platforms\IGraphicsLinux.h">
+      <Filter>IGraphics\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugTimer.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IControl.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsEditorDelegate.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IControls.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IFPSDisplayControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IPopupMenuControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IVKeyboardControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IVMeterControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IVMultiSliderControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IVScopeControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\ITextEntryControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugPaths.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Drawing\IGraphicsSkia.h">
+      <Filter>IGraphics\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugPluginBase.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\CLAP\IPlugCLAP.h">
+      <Filter>IPlug\CLAP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\Extras\Synth\ControlRamp.h">
+      <Filter>IPlug\Extras\Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\Extras\Synth\MidiSynth.h">
+      <Filter>IPlug\Extras\Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\Extras\Synth\SynthVoice.h">
+      <Filter>IPlug\Extras\Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\Extras\Synth\VoiceAllocator.h">
+      <Filter>IPlug\Extras\Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\WDL\resample.h">
+      <Filter>WDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\WDL\convoengine.h">
+      <Filter>WDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\WDL\fft.h">
+      <Filter>WDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\IControlInterface.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\utility\wav.h">
+      <Filter>source\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPBlockConvolver.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPFIRFilter.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPFracInterpolator.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPHBDownsampler.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPHBUpsampler.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPProcessor.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPRealFFT.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPResampler.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPSincFilterGen.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\fft4g.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\r8bbase.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\r8bconf.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\r8butil.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\pffft_double.h">
+      <Filter>r8brain-free\pffft_double</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\pffft_priv_impl.h">
+      <Filter>r8brain-free\pffft_double</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\simd\pf_avx_double.h">
+      <Filter>r8brain-free\pffft_double\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\simd\pf_double.h">
+      <Filter>r8brain-free\pffft_double\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\simd\pf_neon_double.h">
+      <Filter>r8brain-free\pffft_double\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\simd\pf_neon_double_from_avx.h">
+      <Filter>r8brain-free\pffft_double\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\simd\pf_scalar_double.h">
+      <Filter>r8brain-free\pffft_double\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\simd\pf_sse2_double.h">
+      <Filter>r8brain-free\pffft_double\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\FFTConvolver\AudioFFT.h">
+      <Filter>FFTConvolver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\FFTConvolver\FFTConvolver.h">
+      <Filter>FFTConvolver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\FFTConvolver\TwoStageFFTConvolver.h">
+      <Filter>FFTConvolver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\FFTConvolver\Utilities.h">
+      <Filter>FFTConvolver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\dsp\WDL_convolver.h">
+      <Filter>source\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\dsp\TwoStageConvolver.h">
+      <Filter>source\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\dsp\IrBuffer.h">
+      <Filter>source\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\dsp\HISSToolsConvolver.h">
+      <Filter>source\dsp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="IPlug">
+      <UniqueIdentifier>{2425d7db-3821-4242-b5c9-db34bda176ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{340070a8-76f3-47eb-9d5f-c13785b65579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IGraphics">
+      <UniqueIdentifier>{4867b134-9c10-4435-b4ba-5b411e34340b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IGraphics\Drawing">
+      <UniqueIdentifier>{f77209f4-83aa-47eb-9a44-59880a83c238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IGraphics\Platform">
+      <UniqueIdentifier>{2731d3da-3446-4ccb-83ff-8ae3793611b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IGraphics\Controls">
+      <UniqueIdentifier>{fa39707d-4118-45f2-92fb-d407fa5d3288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{8c338368-7512-426b-af83-0f50719ca0bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPlug\CLAP">
+      <UniqueIdentifier>{35a9e026-dde0-499a-9432-4ee1754ffba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPlug\Extras">
+      <UniqueIdentifier>{ce4313bf-e349-438e-9778-3c9900213f18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPlug\Extras\Synth">
+      <UniqueIdentifier>{570e249b-915f-4dd0-98c2-f21dbadc0465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WDL">
+      <UniqueIdentifier>{7439a523-0cec-4177-b2a3-3da49099e64c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HISSTools_Library">
+      <UniqueIdentifier>{bd5fec10-796e-444b-96a1-89edccee4a91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HISSTools_Library\FFT">
+      <UniqueIdentifier>{4066d1d2-bccc-4eca-9cf1-de8b89030ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HISSTools_Library\Convolution">
+      <UniqueIdentifier>{2451938e-4665-49b2-87dd-3766aa24a1c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HISSTools_Library\AudioFile">
+      <UniqueIdentifier>{200eed54-abc8-4737-96d3-4b50d7a187ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HISSTools_PluginLib">
+      <UniqueIdentifier>{7ebb8829-0ab0-46de-b5fb-906318401b99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HISSTools_PluginLib\Generic">
+      <UniqueIdentifier>{72e40099-bd70-4921-8fc9-0c2ebfae6fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{9f874508-1750-4006-a97a-0b093a792ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\dsp">
+      <UniqueIdentifier>{5cab76b5-c239-49e7-b4de-b14d1c42eb54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface">
+      <UniqueIdentifier>{c64b2b7f-c8ed-4a08-95c4-b55b4da7286e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\utility">
+      <UniqueIdentifier>{873ff924-5bf3-4a3f-9941-53dd6a1e76cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="r8brain-free">
+      <UniqueIdentifier>{4f7ececa-03f5-4907-b95d-aec97326d1c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="r8brain-free\pffft_double">
+      <UniqueIdentifier>{cb5721f8-8f1a-474d-ab4e-9d27f0a4a9f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="r8brain-free\pffft_double\simd">
+      <UniqueIdentifier>{23bbbf3a-114c-4fe0-ac45-647a13c9fb98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FFTConvolver">
+      <UniqueIdentifier>{08a73983-b124-46c7-a8eb-a44e14e8e662}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\resources\main.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\config\NeZcab-web.mk">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\config\NeZcab-win.props">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\config\NeZcab-mac.xcconfig">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\config\NeZcab-ios.xcconfig">
+      <Filter>config</Filter>
+    </None>
+  </ItemGroup>
+</Project>

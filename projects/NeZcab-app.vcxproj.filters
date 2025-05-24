@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\NeZcab.cpp" />
+    <ClCompile Include="..\..\iPlug2\IGraphics\IControl.cpp">
+      <Filter>IGraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\IGraphics.cpp">
+      <Filter>IGraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\IGraphicsEditorDelegate.cpp">
+      <Filter>IGraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\Drawing\IGraphicsNanoVG.cpp">
+      <Filter>IGraphics\Drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\Platforms\IGraphicsWin.cpp">
+      <Filter>IGraphics\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\IPlugAPIBase.cpp">
+      <Filter>IPlug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\IPlugParameter.cpp">
+      <Filter>IPlug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\IPlugPluginBase.cpp">
+      <Filter>IPlug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\IPlugProcessor.cpp">
+      <Filter>IPlug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\IPlugTimer.cpp">
+      <Filter>IPlug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\APP\IPlugAPP.cpp">
+      <Filter>IPlug\APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\APP\IPlugAPP_dialog.cpp">
+      <Filter>IPlug\APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\APP\IPlugAPP_host.cpp">
+      <Filter>IPlug\APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\APP\IPlugAPP_main.cpp">
+      <Filter>IPlug\APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\RtAudio.cpp">
+      <Filter>IPlug\APP\RTAudioMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\Dependencies\IPlug\RTMidi\RtMidi.cpp">
+      <Filter>IPlug\APP\RTAudioMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\asio.cpp">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\asiodrivers.cpp">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\asiolist.cpp">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\iasiothiscallresolver.cpp">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\Controls\IControls.cpp">
+      <Filter>IGraphics\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\Controls\IPopupMenuControl.cpp">
+      <Filter>IGraphics\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\Extras\Synth\MidiSynth.cpp">
+      <Filter>IPlug\Extras\Synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\Extras\Synth\VoiceAllocator.cpp">
+      <Filter>IPlug\Extras\Synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\Controls\ITextEntryControl.cpp">
+      <Filter>IGraphics\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IPlug\IPlugPaths.cpp">
+      <Filter>IPlug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\IGraphics\Drawing\IGraphicsSkia.cpp">
+      <Filter>IGraphics\Drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\WDL\convoengine.cpp">
+      <Filter>WDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\WDL\fft.c">
+      <Filter>WDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\iPlug2\WDL\resample.cpp">
+      <Filter>WDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\HISSTools_FFT\HISSTools_FFT.cpp">
+      <Filter>HISSTools_Library\FFT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\HIRT_Multichannel_Convolution\Convolver.cpp">
+      <Filter>HISSTools_Library\Convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\HIRT_Multichannel_Convolution\MonoConvolve.cpp">
+      <Filter>HISSTools_Library\Convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\HIRT_Multichannel_Convolution\NToMonoConvolve.cpp">
+      <Filter>HISSTools_Library\Convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\HIRT_Multichannel_Convolution\PartitionedConvolve.cpp">
+      <Filter>HISSTools_Library\Convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\HIRT_Multichannel_Convolution\TimeDomainConvolve.cpp">
+      <Filter>HISSTools_Library\Convolution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\AudioFile\BaseAudioFile.cpp">
+      <Filter>HISSTools_Library\AudioFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\AudioFile\IAudioFile.cpp">
+      <Filter>HISSTools_Library\AudioFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_Library\AudioFile\OAudioFile.cpp">
+      <Filter>HISSTools_Library\AudioFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Frame_Stats.c">
+      <Filter>HISSTools_PluginLib\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Matrix_Math.c">
+      <Filter>HISSTools_PluginLib\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Trim_Normalise.c">
+      <Filter>HISSTools_PluginLib\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\r8brain-free-src\pffft.cpp">
+      <Filter>r8brain-free</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\r8brain-free-src\r8bbase.cpp">
+      <Filter>r8brain-free</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\r8brain-free-src\pffft_double\pffft_double.c">
+      <Filter>r8brain-free\pffft_double</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\FFTConvolver\AudioFFT.cpp">
+      <Filter>FFTConvolver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\FFTConvolver\FFTConvolver.cpp">
+      <Filter>FFTConvolver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\FFTConvolver\TwoStageFFTConvolver.cpp">
+      <Filter>FFTConvolver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\FFTConvolver\Utilities.cpp">
+      <Filter>FFTConvolver</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\NeZcab.h" />
+    <ClInclude Include="..\resources\resource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IControl.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphics.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsConstants.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsEditorDelegate.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsLiveEdit.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsPopupMenu.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsStructs.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsPrivate.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphicsUtilities.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphics_include_in_plug_hdr.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphics_include_in_plug_src.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\IGraphics_select.h">
+      <Filter>IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Drawing\IGraphicsNanoVG.h">
+      <Filter>IGraphics\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Platforms\IGraphicsLinux.h">
+      <Filter>IGraphics\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Platforms\IGraphicsMac.h">
+      <Filter>IGraphics\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Platforms\IGraphicsMac_view.h">
+      <Filter>IGraphics\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Platforms\IGraphicsWeb.h">
+      <Filter>IGraphics\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Platforms\IGraphicsWin.h">
+      <Filter>IGraphics\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugAPIBase.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugConstants.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugEditorDelegate.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugLogger.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugMidi.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugPlatform.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugParameter.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugProcessor.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugStructs.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugTimer.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugUtilities.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlug_include_in_plug_hdr.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlug_include_in_plug_src.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="../config.h" />
+    <ClInclude Include="..\..\iPlug2\IPlug\APP\IPlugAPP.h">
+      <Filter>IPlug\APP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\APP\IPlugAPP_host.h">
+      <Filter>IPlug\APP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\RtAudio.h">
+      <Filter>IPlug\APP\RTAudioMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\Dependencies\IPlug\RTMidi\RtMidi.h">
+      <Filter>IPlug\APP\RTAudioMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\asio.h">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\asiodrivers.h">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\asiodrvr.h">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\asiolist.h">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\asiosys.h">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\dsound.h">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\functiondiscoverykeys_devpkey.h">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\ginclude.h">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\iasiodrv.h">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\iasiothiscallresolver.h">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\Dependencies\IPlug\RTAudio\include\soundcard.h">
+      <Filter>IPlug\APP\RTAudioMidi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IControls.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IFPSDisplayControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IPopupMenuControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IVKeyboardControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IVMeterControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IVMultiSliderControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\IVScopeControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\Extras\Synth\ControlRamp.h">
+      <Filter>IPlug\Extras\Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\Extras\Synth\MidiSynth.h">
+      <Filter>IPlug\Extras\Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\Extras\Synth\SynthVoice.h">
+      <Filter>IPlug\Extras\Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\Extras\Synth\VoiceAllocator.h">
+      <Filter>IPlug\Extras\Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Controls\ITextEntryControl.h">
+      <Filter>IGraphics\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugPaths.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IGraphics\Drawing\IGraphicsSkia.h">
+      <Filter>IGraphics\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\IPlugPluginBase.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\IPlug\ISender.h">
+      <Filter>IPlug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\WDL\resample.h">
+      <Filter>WDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\WDL\convoengine.h">
+      <Filter>WDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\iPlug2\WDL\fft.h">
+      <Filter>WDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\IControlInterface.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\utility\wav.h">
+      <Filter>source\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPBlockConvolver.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPFIRFilter.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPFracInterpolator.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPHBDownsampler.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPHBUpsampler.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPProcessor.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPRealFFT.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPResampler.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\CDSPSincFilterGen.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\fft4g.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\r8bbase.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\r8bconf.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\r8butil.h">
+      <Filter>r8brain-free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\pffft_double.h">
+      <Filter>r8brain-free\pffft_double</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\pffft_priv_impl.h">
+      <Filter>r8brain-free\pffft_double</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\simd\pf_avx_double.h">
+      <Filter>r8brain-free\pffft_double\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\simd\pf_double.h">
+      <Filter>r8brain-free\pffft_double\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\simd\pf_neon_double.h">
+      <Filter>r8brain-free\pffft_double\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\simd\pf_neon_double_from_avx.h">
+      <Filter>r8brain-free\pffft_double\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\simd\pf_scalar_double.h">
+      <Filter>r8brain-free\pffft_double\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\r8brain-free-src\pffft_double\simd\pf_sse2_double.h">
+      <Filter>r8brain-free\pffft_double\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\FFTConvolver\AudioFFT.h">
+      <Filter>FFTConvolver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\FFTConvolver\FFTConvolver.h">
+      <Filter>FFTConvolver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\FFTConvolver\TwoStageFFTConvolver.h">
+      <Filter>FFTConvolver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\FFTConvolver\Utilities.h">
+      <Filter>FFTConvolver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\dsp\WDL_convolver.h">
+      <Filter>source\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\dsp\TwoStageConvolver.h">
+      <Filter>source\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\dsp\IrBuffer.h">
+      <Filter>source\dsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\dsp\HISSToolsConvolver.h">
+      <Filter>source\dsp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="resources">
+      <UniqueIdentifier>{c6ab0357-34f0-4ae8-8b4f-225dc387b2db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{ece5417b-4823-4518-9381-2660a4319318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IGraphics">
+      <UniqueIdentifier>{f0485b61-149d-429f-8802-49cfd67e39b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IGraphics\Drawing">
+      <UniqueIdentifier>{7c74c254-d1c6-4dc4-9e9c-be28ac64e4a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IGraphics\Platform">
+      <UniqueIdentifier>{057e0b3e-1b43-4515-bb87-b1de62694e8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IGraphics\Controls">
+      <UniqueIdentifier>{ae5d91eb-b8dc-471d-8b5a-6c5bf5dfe6f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPlug">
+      <UniqueIdentifier>{3bd7f71b-e8ed-4d62-8e22-06c09c5c15a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPlug\Extras">
+      <UniqueIdentifier>{e08ee237-fc5e-4c2b-aa7f-3797cdf9bf34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPlug\APP">
+      <UniqueIdentifier>{13b3737b-7ecf-435c-8da0-08ccf8e2fb84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPlug\APP\RTAudioMidi">
+      <UniqueIdentifier>{e7841f62-a97d-41b6-93d1-ecca8a512d93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPlug\APP\RTAudioMidi\include">
+      <UniqueIdentifier>{649c5de3-b4c2-4de9-8d57-3b1762646259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPlug\Extras\Synth">
+      <UniqueIdentifier>{fc763cd3-cc76-4d31-9ba4-a4e7361e4adf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WDL">
+      <UniqueIdentifier>{ce5893f1-b089-4afc-8678-251bcd89075d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HISSTools_Library">
+      <UniqueIdentifier>{569f6f87-ccf4-4320-8b96-03fda020ec70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HISSTools_Library\FFT">
+      <UniqueIdentifier>{fa97015d-00ae-4c60-a3b7-78a4da5d9a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HISSTools_Library\Convolution">
+      <UniqueIdentifier>{27caaffd-a0b8-40c7-9088-1487f4ce0dde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HISSTools_Library\AudioFile">
+      <UniqueIdentifier>{679059d1-70eb-4a06-b627-a48947714286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HISSTools_PluginLib">
+      <UniqueIdentifier>{9611a8f6-0dc8-4d0d-a220-924705448701}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HISSTools_PluginLib\Generic">
+      <UniqueIdentifier>{6ea84c90-780c-4ff2-b1f1-14010bb92ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{989140a5-bab3-4529-83b3-2c1ce8e33922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\dsp">
+      <UniqueIdentifier>{85575d4f-9334-4b37-bdda-56cb33613b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interface">
+      <UniqueIdentifier>{edeb894e-ec56-4dc5-bf74-de5af84624f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\utility">
+      <UniqueIdentifier>{11a1fb03-080c-417e-a434-19a070e1edc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="r8brain-free">
+      <UniqueIdentifier>{5c3e30b4-1078-42cd-9b9d-13489b39259f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="r8brain-free\pffft_double">
+      <UniqueIdentifier>{cafe33f4-8e9a-44c3-9d05-4996ad54ca6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="r8brain-free\pffft_double\simd">
+      <UniqueIdentifier>{f1464c2e-621b-49ab-a45b-7c7ca46814ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FFTConvolver">
+      <UniqueIdentifier>{7f7e74bc-a1ae-402c-9414-6afafcfbfa9e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\resources\main.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\config\NeZcab-ios.xcconfig">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\config\NeZcab-web.mk">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\config\NeZcab-mac.xcconfig">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\config\NeZcab-win.props">
+      <Filter>config</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\resources\NeZcab.ico">
+      <Filter>resources</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
