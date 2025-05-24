@@ -101,15 +101,6 @@
     <ClCompile Include="..\source\HISSTools_Library\AudioFile\OAudioFile.cpp">
       <Filter>HISSTools_Library\AudioFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Frame_Stats.c">
-      <Filter>HISSTools_PluginLib\Generic</Filter>
-    </ClCompile>
-    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Matrix_Math.c">
-      <Filter>HISSTools_PluginLib\Generic</Filter>
-    </ClCompile>
-    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Trim_Normalise.c">
-      <Filter>HISSTools_PluginLib\Generic</Filter>
-    </ClCompile>
     <ClCompile Include="..\source\r8brain-free-src\pffft.cpp">
       <Filter>r8brain-free</Filter>
     </ClCompile>
@@ -303,9 +294,6 @@
     <ClInclude Include="..\..\iPlug2\WDL\fft.h">
       <Filter>WDL</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\IControlInterface.h">
-      <Filter>source</Filter>
-    </ClInclude>
     <ClInclude Include="..\source\utility\wav.h">
       <Filter>source\utility</Filter>
     </ClInclude>
@@ -399,6 +387,12 @@
     <ClInclude Include="..\source\dsp\WDL_convolver.h">
       <Filter>source\dsp</Filter>
     </ClInclude>
+    <ClInclude Include="..\source\utility\AH_VectorOps.h">
+      <Filter>source\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\utility\Resampler.h">
+      <Filter>source\utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="resources">
@@ -445,12 +439,6 @@
     </Filter>
     <Filter Include="HISSTools_Library\AudioFile">
       <UniqueIdentifier>{e233604a-e909-4793-bd9d-6f0072b3b563}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="HISSTools_PluginLib">
-      <UniqueIdentifier>{c95bd745-7a7f-4608-8928-f1e7ec50770d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="HISSTools_PluginLib\Generic">
-      <UniqueIdentifier>{162d5bdc-8766-4833-9b89-8b97c4c0804b}</UniqueIdentifier>
     </Filter>
     <Filter Include="source">
       <UniqueIdentifier>{045007ab-e083-4666-b088-8c6b03ddecbf}</UniqueIdentifier>

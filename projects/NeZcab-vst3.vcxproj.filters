@@ -176,15 +176,6 @@
     <ClCompile Include="..\source\HISSTools_Library\AudioFile\OAudioFile.cpp">
       <Filter>HISSTools_Library\AudioFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Frame_Stats.c">
-      <Filter>HISSTools_PluginLib\Generic</Filter>
-    </ClCompile>
-    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Matrix_Math.c">
-      <Filter>HISSTools_PluginLib\Generic</Filter>
-    </ClCompile>
-    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Trim_Normalise.c">
-      <Filter>HISSTools_PluginLib\Generic</Filter>
-    </ClCompile>
     <ClCompile Include="..\source\r8brain-free-src\pffft.cpp">
       <Filter>r8brain-free</Filter>
     </ClCompile>
@@ -441,12 +432,6 @@
     <ClInclude Include="..\..\iPlug2\IPlug\ISender.h">
       <Filter>IPlug</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\IControlInterface.h">
-      <Filter>source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\dsp\ConvolutionDsp_0.h">
-      <Filter>source\dsp</Filter>
-    </ClInclude>
     <ClInclude Include="..\source\utility\wav.h">
       <Filter>source\utility</Filter>
     </ClInclude>
@@ -549,6 +534,12 @@
     <ClInclude Include="..\source\dsp\WDL_convolver.h">
       <Filter>source\dsp</Filter>
     </ClInclude>
+    <ClInclude Include="..\source\utility\AH_VectorOps.h">
+      <Filter>source\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\utility\Resampler.h">
+      <Filter>source\utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="resources">
@@ -640,12 +631,6 @@
     </Filter>
     <Filter Include="HISSTools_Library\AudioFile">
       <UniqueIdentifier>{589ab27b-3866-4238-9b76-90e971977f3f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="HISSTools_PluginLib">
-      <UniqueIdentifier>{457d6e55-53b6-44ff-8d41-a5cc57d88ccb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="HISSTools_PluginLib\Generic">
-      <UniqueIdentifier>{db7864da-c754-4621-acd2-ff0f5bb0fbac}</UniqueIdentifier>
     </Filter>
     <Filter Include="r8brain-free">
       <UniqueIdentifier>{471ab6c5-473e-479a-90bc-866a2e90e059}</UniqueIdentifier>

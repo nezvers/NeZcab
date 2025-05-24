@@ -314,7 +314,6 @@
     <ClInclude Include="..\source\FFTConvolver\FFTConvolver.h" />
     <ClInclude Include="..\source\FFTConvolver\TwoStageFFTConvolver.h" />
     <ClInclude Include="..\source\FFTConvolver\Utilities.h" />
-    <ClInclude Include="..\source\IControlInterface.h" />
     <ClInclude Include="..\source\r8brain-free-src\CDSPBlockConvolver.h" />
     <ClInclude Include="..\source\r8brain-free-src\CDSPFIRFilter.h" />
     <ClInclude Include="..\source\r8brain-free-src\CDSPFracInterpolator.h" />
@@ -337,6 +336,8 @@
     <ClInclude Include="..\source\r8brain-free-src\r8bbase.h" />
     <ClInclude Include="..\source\r8brain-free-src\r8bconf.h" />
     <ClInclude Include="..\source\r8brain-free-src\r8butil.h" />
+    <ClInclude Include="..\source\utility\AH_VectorOps.h" />
+    <ClInclude Include="..\source\utility\Resampler.h" />
     <ClInclude Include="..\source\utility\wav.h" />
   </ItemGroup>
   <ItemGroup>
@@ -389,9 +390,6 @@
     <ClCompile Include="..\source\HISSTools_Library\HIRT_Multichannel_Convolution\PartitionedConvolve.cpp" />
     <ClCompile Include="..\source\HISSTools_Library\HIRT_Multichannel_Convolution\TimeDomainConvolve.cpp" />
     <ClCompile Include="..\source\HISSTools_Library\HISSTools_FFT\HISSTools_FFT.cpp" />
-    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Frame_Stats.c" />
-    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Matrix_Math.c" />
-    <ClCompile Include="..\source\HISSTools_PluginLib\HISSTools_DSP\HIRT_Generic\HIRT_Trim_Normalise.c" />
     <ClCompile Include="..\source\r8brain-free-src\pffft.cpp" />
     <ClCompile Include="..\source\r8brain-free-src\pffft_double\pffft_double.c" />
     <ClCompile Include="..\source\r8brain-free-src\r8bbase.cpp" />

@@ -1,7 +1,6 @@
 #pragma once
 
 #include "IAudioFile.h"
-#include "HISSTools_Pointers.hpp"
 #include "Resampler.h"
 #include <memory>
 #include <vector>
@@ -57,8 +56,8 @@ public:
         }
 
         // TODO: check if valid audio file
-        baseIR = std::make_unique<HISSTools_RefPtr<float>>(file.getFrames());
-        file.readChannel(baseIR->get(), file.getFrames(), 0);
+        baseIR = std::make_unique<std::vector<float>>(file.getFrames());
+        file.readChannel(baseIR->data(), file.getFrames(), 0);
         mBaseSampleRate = file.getSamplingRate();
 
         if (Resample() != 0) {
@@ -66,7 +65,7 @@ public:
             mBaseSampleRate = 0.;
             return 1;
         }
-        int sampleSize = sizeof(mIR->get()[0]);
+        int sampleSize = sizeof(mIR->data()[0]);
 
         mIsStaged = true;
 
@@ -76,11 +75,11 @@ public:
     }
 
     WDL_FFT_REAL* Get() {
-        return mIR->get();
+        return mIR->data();
     }
 
     size_t GetSize() {
-        return mIR->getSize();
+        return mIR->size();
     }
 
 
@@ -92,8 +91,8 @@ private:
 
     int Resample() {
         if ((int)mBaseSampleRate == (int)mSampleRate) {
-            unsigned long sampleCount = baseIR->getSize();
-            mIR = std::make_unique<HISSTools_RefPtr<WDL_FFT_REAL>>(sampleCount);
+            unsigned long sampleCount = baseIR->size();
+            mIR = std::make_unique<std::vector<WDL_FFT_REAL>>(sampleCount);
 
             if (mIR == nullptr) { return 1; }
 
@@ -122,7 +121,7 @@ private:
     int ResampleCustom() {
         unsigned long outLength = 0;
         Resampler resampler;
-        float* temp = resampler.process(baseIR->get(), baseIR->getSize(), outLength, mBaseSampleRate, mSampleRate);
+        float* temp = resampler.process(baseIR->data(), baseIR->size(), outLength, mBaseSampleRate, mSampleRate);
         if (outLength == 0) {
             if (temp != NULL) {
                 delete[] temp;
@@ -130,7 +129,7 @@ private:
             return 1;
         }
 
-        mIR = std::make_unique<HISSTools_RefPtr<WDL_FFT_REAL>>(outLength);
+        mIR = std::make_unique<std::vector<WDL_FFT_REAL>>(outLength);
 
         for (unsigned long i = 0; i < outLength; i++) {
             (*mIR)[i] = static_cast<WDL_FFT_REAL>(temp[i]);
@@ -146,11 +145,11 @@ private:
         constexpr unsigned long blockLength = 64;
 
 
-        unsigned long srcLength = baseIR->getSize();
+        unsigned long srcLength = baseIR->size();
         unsigned long dstLength = ResampleLength(srcLength, srcRate, dstRate);
-        std::unique_ptr<HISSTools_RefPtr<WDL_FFT_REAL>> tempBuff = std::make_unique<HISSTools_RefPtr<WDL_FFT_REAL>>(dstLength);
-        float* pSrc = baseIR->get();
-        WDL_FFT_REAL* pDest = tempBuff->get();
+        std::unique_ptr<std::vector<WDL_FFT_REAL>> tempBuff = std::make_unique<std::vector<WDL_FFT_REAL>>(dstLength);
+        float* pSrc = baseIR->data();
+        WDL_FFT_REAL* pDest = tempBuff->data();
 
         resampler.SetRates(srcRate, dstRate);
         resampler.SetFeedMode(true);
@@ -195,11 +194,11 @@ private:
         double dstRate = mSampleRate;
 
 
-        unsigned long srcLength = baseIR->getSize();
+        unsigned long srcLength = baseIR->size();
         unsigned long dstLength = ResampleLength(srcLength, srcRate, dstRate);
-        std::unique_ptr<HISSTools_RefPtr<WDL_FFT_REAL>> tempBuff = std::make_unique<HISSTools_RefPtr<WDL_FFT_REAL>>(dstLength);
-        float* pSrc = baseIR->get();
-        WDL_FFT_REAL* pDest = tempBuff->get();
+        std::unique_ptr<std::vector<WDL_FFT_REAL>> tempBuff = std::make_unique<std::vector<WDL_FFT_REAL>>(dstLength);
+        float* pSrc = baseIR->data();
+        WDL_FFT_REAL* pDest = tempBuff->data();
 
         double pos = 0.;
         double delta = srcRate / dstRate;
@@ -224,8 +223,8 @@ private:
     int ResampleR8brain() {
         double srcRate = mBaseSampleRate;
         double dstRate = mSampleRate;
-        unsigned long srcLength = baseIR->getSize();
-        float* pSrc = baseIR->get();
+        unsigned long srcLength = baseIR->size();
+        float* pSrc = baseIR->data();
 
         std::unique_ptr<CDSPResampler16IR> resampler = std::make_unique<CDSPResampler16IR>(srcRate, dstRate, srcLength);
         unsigned long dstLength = resampler->getMaxOutLen(0);
@@ -234,11 +233,11 @@ private:
             return 1;
         }
 
-        std::unique_ptr<HISSTools_RefPtr<WDL_FFT_REAL>> tempBuff = std::make_unique<HISSTools_RefPtr<WDL_FFT_REAL>>(dstLength);
-        resampler->oneshot(pSrc, srcLength, tempBuff->get(), dstLength);
+        std::unique_ptr<std::vector<WDL_FFT_REAL>> tempBuff = std::make_unique<std::vector<WDL_FFT_REAL>>(dstLength);
+        resampler->oneshot(pSrc, srcLength, tempBuff->data(), dstLength);
 
 
-        WDL_FFT_REAL* pDest = tempBuff->get();
+        WDL_FFT_REAL* pDest = tempBuff->data();
         mIR = std::move(tempBuff);
 
         return 0;
@@ -246,8 +245,8 @@ private:
 
     double mSampleRate = 0.;
     double mBaseSampleRate = 0.;
-    std::unique_ptr<HISSTools_RefPtr<float>> baseIR;
-    std::unique_ptr<HISSTools_RefPtr<WDL_FFT_REAL>> mIR;
+    std::unique_ptr<std::vector<float>> baseIR;
+    std::unique_ptr<std::vector<WDL_FFT_REAL>> mIR;
     WDL_String mFilePath;
     WDL_String mDirPath;
     ResamplerType mResamplerType;
