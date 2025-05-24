@@ -1,0 +1,9 @@
+[submodule "source/HISSTools_Library"]
+	path = source/HISSTools_Library
+	url = https://github.com/AlexHarker/HISSTools_Library
+[submodule "source/FFTConvolver"]
+	path = source/FFTConvolver
+	url = https://github.com/falkTX/FFTConvolver
+[submodule "source/r8brain-free-src"]
+	path = source/r8brain-free-src
+	url = https://github.com/avaneev/r8brain-free-src
