@@ -2,8 +2,13 @@
 
 Convolution example/showcase project of different libraries for resampling and convolution.
 Clone project recursively next to Iplug2 library `(currently configuration set for Windows only)`.
+```
+git clone --recursive https://github.com/nezvers/NeZcab.git
+```
 
 Important notes:
+I don't have Mac to setup project yet but config should be set with includes and defs.
+Add to project `*cpp` files from `IPlug2/WDL` and projects `source` folders.
 Defines used ```WDL_RESAMPLE_TYPE=float; WDL_FFT_REALSIZE=4; SAMPLE_TYPE_FLOAT```
 
 
