@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="UserMacros">
     <IPLUG2_ROOT>$(ProjectDir)..\..\iPlug2</IPLUG2_ROOT>
-    <HISSTOOLS_PLUGINLIB_ROOT>$(SolutionDir)source\HISSTools_PluginLib</HISSTOOLS_PLUGINLIB_ROOT>
-    <HISSTOOLS_PLUGINLIB_PATHS>$(HISSTOOLS_PLUGINLIB_ROOT)\HISSTools_Graphics;$(HISSTOOLS_PLUGINLIB_ROOT)\HISSTools_UI;$(HISSTOOLS_PLUGINLIB_ROOT)\HISSTools_Utility;$(HISSTOOLS_PLUGINLIB_ROOT)\HISSTools_DSP;$(HISSTOOLS_PLUGINLIB_ROOT)\HISSTools_DSP\HIRT_Generic;$(HISSTOOLS_PLUGINLIB_ROOT)\HISSTools_DSP\HIRT_Generic\AH_Headers;</HISSTOOLS_PLUGINLIB_PATHS>
     <HISSTOOLS_LIBRARY_ROOT>$(SolutionDir)source\HISSTools_Library</HISSTOOLS_LIBRARY_ROOT>
     <HISSTOOLS_LIBRARY_PATHS>$(HISSTOOLS_LIBRARY_ROOT);$(HISSTOOLS_LIBRARY_ROOT)\AudioFile;$(HISSTOOLS_LIBRARY_ROOT)\HIRT_Multichannel_Convolution;$(HISSTOOLS_LIBRARY_ROOT)\HISSTools_FFT;</HISSTOOLS_LIBRARY_PATHS>
     <NEZVERS_LIB_ROOT>$(SolutionDir)source</NEZVERS_LIB_ROOT>
@@ -29,7 +27,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(EXTRA_INC_PATHS);$(IPLUG_INC_PATHS);$(IGRAPHICS_INC_PATHS);$(GLAD_GL2_PATHS);$(WDL_LIB);$(NEZVERS_LIB_PATHS);$(HISSTOOLS_LIBRARY_PATHS);$(HISSTOOLS_PLUGINLIB_PATHS);$(R8BRAIN_LIB_PATHS);$(FFTCONVOLVER_LIB_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(EXTRA_INC_PATHS);$(IPLUG_INC_PATHS);$(IGRAPHICS_INC_PATHS);$(GLAD_GL2_PATHS);$(WDL_LIB);$(NEZVERS_LIB_PATHS);$(HISSTOOLS_LIBRARY_PATHS);$(R8BRAIN_LIB_PATHS);$(FFTCONVOLVER_LIB_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>$(EXTRA_ALL_DEFS);%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
