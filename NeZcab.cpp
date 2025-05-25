@@ -66,8 +66,8 @@ void NeZcab::OnIdle() {
     
     if (irBuffer.mIsStaged) {
 #if defined(USE_WDL_CONVOLVER)
-        convolutionDsp[0].SetIr(irBuffer.Get(), irBuffer.GetSize(), GetSampleRate());
-        convolutionDsp[1].SetIr(irBuffer.Get(), irBuffer.GetSize(), GetSampleRate());
+        convolutionDsp[0].SetIr(irBuffer.Get(), irBuffer.GetSize(), GetSampleRate(), GetBlockSize());
+        convolutionDsp[1].SetIr(irBuffer.Get(), irBuffer.GetSize(), GetSampleRate(), GetBlockSize());
 #else
         convolutionDsp[0].SetIr(irBuffer.Get(), irBuffer.GetSize());
         convolutionDsp[1].SetIr(irBuffer.Get(), irBuffer.GetSize());
@@ -81,8 +81,8 @@ void NeZcab::OnReset() {
     
     if (irBuffer.mIsStaged) {
 #if defined(USE_WDL_CONVOLVER)
-        convolutionDsp[0].SetIr(irBuffer.Get(), irBuffer.GetSize(), GetSampleRate());
-        convolutionDsp[1].SetIr(irBuffer.Get(), irBuffer.GetSize(), GetSampleRate());
+        convolutionDsp[0].SetIr(irBuffer.Get(), irBuffer.GetSize(), GetSampleRate(), GetBlockSize());
+        convolutionDsp[1].SetIr(irBuffer.Get(), irBuffer.GetSize(), GetSampleRate(), GetBlockSize());
 #else
         convolutionDsp[0].SetIr(irBuffer.Get(), irBuffer.GetSize());
         convolutionDsp[1].SetIr(irBuffer.Get(), irBuffer.GetSize());
@@ -91,8 +91,8 @@ void NeZcab::OnReset() {
     }
 
 #if defined(USE_WDL_CONVOLVER)
-    convolutionDsp[0].OnReset(GetSampleRate());
-    convolutionDsp[1].OnReset(GetSampleRate());
+    convolutionDsp[0].OnReset();
+    convolutionDsp[1].OnReset();
     SetLatency(convolutionDsp->GetLatency());
 #else
     convolutionDsp[0].OnReset();
